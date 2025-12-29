@@ -14,7 +14,7 @@ Q. Find the smallest and greatest number in an array.
 Q. Find the index also.
 Q. wAF to calculate sum and product of all numbers in an array    
 Q.WAF to swap the max and min number of an array.    
-Q. WAF to print all the unique values in an array.
-WAF to print intersection of 2 arrays.
+Q.WAF to print all the unique values in an array.    
+Q.WAF to print intersection of 2 arrays.
 
 
