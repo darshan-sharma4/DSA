@@ -36,9 +36,9 @@ vector<int> pairSum(vector<int>num, int target){
         else{
             ans.push_back(i);
             ans.push_back(j);
+            return ans;
         }
 
-        return ans;
     }
     
 }
