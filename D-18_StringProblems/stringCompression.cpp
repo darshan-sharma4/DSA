@@ -33,7 +33,7 @@ int compressString(vector<char>& chars){
 }
 
 int main(){
-    char chars[]={'a','a','b','b','c','c','c'};
+    vector<char> chars={'a','a','b','b','c','c','c'};
     int res = compressString(chars);
     cout<<res<<endl;
 }
