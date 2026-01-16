@@ -13,4 +13,12 @@ Note a=0-> then b is gcd
 
 In this subtraction can perform repeated task of subtraction so we take modulo of of a and b to minimize the repeated operation 
 
-like gcd(20,28)= gcd(20,28%20)
+gcd(20,28)= gcd(20,28%20)
+
+5. LCM = a*b/gcd(a,b);       
+
+6. Modulo Arithematics       
+propperties            
+(x+y)%m = x%m + y%m;          
+(x-y)%m = x%m - y%m;          
+(x*y)%m = x%m * y%m;          

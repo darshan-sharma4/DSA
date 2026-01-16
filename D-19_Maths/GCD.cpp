@@ -13,9 +13,15 @@ int gcd(int a , int b){
     if(a==0) return b;
     return a;
 }
+
+int gcdRec(int a , int b){
+    if(b==0) return a;
+
+    return gcdRec(b,a%b);
+}
 int main(){
-    int a =36, b =28;
-    int res= gcd(a,b);
+    int a =0, b =12;
+    int res= gcdRec(a,b);
     cout<< res<< endl;
 
 }
