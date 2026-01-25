@@ -2,6 +2,28 @@
 #include<vector>
 using namespace std;
 
+//O(n+m) method;
+
+bool searchInMatrix(vector<vector<int>>& mat, int target){
+    int n = mat.size();
+    int m = mat[0].size();
+
+    int r =0 , c = m-1;
+
+    while(r<=n && c>=0){
+      if(target==mat[r][c]){
+        return true;
+      }else if(target<mat[r][c]){
+        c--;
+      }else{
+        r++;
+      }
+    }
+}
+///
+
+
+
 bool searchInRow(vector<vector<int>>& mat, int target,int row){
   int col = mat[0].size();
 
@@ -23,6 +45,7 @@ bool searchInRow(vector<vector<int>>& mat, int target,int row){
   
 }
 
+// log(m+n) method optimize 
 bool searchMatrix(vector<vector<int>>& mat, int target){
     int n = mat.size();
     int col = mat[0].size();
@@ -45,6 +68,6 @@ bool searchMatrix(vector<vector<int>>& mat, int target){
 int main(){
  vector<vector<int>> mat ={{1,2,3},{4,5,6},{7,8,9}};
  int target =5;
- bool res = searchMatrix(mat,target);
+ bool res = searchInMatrix(mat,target);
  cout<<res<<endl;
-}
+};

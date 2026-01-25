@@ -47,8 +47,7 @@ v)size,empty,erase
 **Types of map**          
 i) Multi Map    (time Complexity=O(logn))    
 ii)Unordered Map    (tc=O(1)or O(n)in rare case)       
-
-
+<br>
 g.Set        
 Set are a contianer which store unique value in a particular sorted ordered manner.           
 i) insert, emplace       
@@ -57,7 +56,8 @@ iii)erase
 iv)find          
 v)size,empty,erase
 vi)lower_bound        
-vii)upper_bound       
+vii)upper_bound    
+<br>   
 **Types of sets**          
 i) Multi set    (time Complexity=O(logn))    
 ii)Unordered set    (tc=O(1)or O(n)in rare case)     
