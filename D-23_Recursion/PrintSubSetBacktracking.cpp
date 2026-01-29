@@ -4,21 +4,18 @@
 using namespace std;
 
 
-void printSubset(vector<int>&arr,vector<int>&ans,int i){
+void printSubset(vector<int>&arr,vector<int>&ans,int i,vector<vector<int>>&allSubsets){
     if(i==arr.size()){
-        for(int val:ans){
-            cout<<val<<" ";
-        }
-        cout<<endl;
+       allSubsets.push_back(ans);
         return;
     }
     //include process
     ans.push_back(arr[i]);
-    printSubset(arr,ans,i+1);
+    printSubset(arr,ans,i+1,allSubsets);
     
     //exclude
     ans.pop_back();
-    printSubset(arr,ans,i+1);
+    printSubset(arr,ans,i+1,allSubsets);
 
 }
 
@@ -26,7 +23,14 @@ void printSubset(vector<int>&arr,vector<int>&ans,int i){
 int main(){
     vector<int> arr ={1,2,3};
     vector<int> ans;
-    printSubset(arr,ans,0);
+    vector<vector<int>> allSubset;
+    printSubset(arr,ans,0,allSubset);
+
+    for(int i =0; i<allSubset.size();i++){
+        for(int j=0; j<allSubset.size(); j++){
+            cout<< allSubset[i][j]<< " ";
+        }
+    }
 
 }
 
